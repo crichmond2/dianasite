@@ -1,28 +1,53 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LandingPage from './containers/landing'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
+import { BrowserRouter,Switch,Route,withRouter } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Link from './components/link'
+import Grid from '@material-ui/core/Grid'
+import About from './containers/about'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+const styles = {
+  root: {
+    flexGrow: 1,
+  },
+  grow: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20,
+  },
+};
+
+
+const theme = createMuiTheme({
+	palette:{
+		primary:{main:'#282829'},
+		secondary:{main:'#000000'},
+	}
+})
+
+
+const App = props => {
+	const {classes} = props
+	return (
+	<MuiThemeProvider theme={theme}>
+		<BrowserRouter>
+			<Switch>
+				<Route path='/' exact component={LandingPage}/>
+				<Route path='/about' exact component={About}/>
+			</Switch>
+		</BrowserRouter>
+	</MuiThemeProvider>
+	);
 }
 
-export default App;
+export default withStyles(styles)(App);

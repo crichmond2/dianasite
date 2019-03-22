@@ -1,0 +1,33 @@
+.owl{
+	position:relative;
+	height: 100vh;
+	z-index:1;
+	text-align:center;
+}
+.owl:before{
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:url('./../OWL.jpg') no-repeat center top /cover;
+	content:'';
+	-webkit-filter:brightness(50%);
+	filter:brightness(50%);
+	z-index:-1;
+}
+
+.owlText{
+	height:100%;
+}
+
+.elf{
+	font-size:4vw;
+	color:white;
+}
+
+.subElf{
+	font-size:2vw;
+	color:#cdcfd3;
+}
