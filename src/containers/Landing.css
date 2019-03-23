@@ -1,6 +1,6 @@
 .owl{
 	position:relative;
-	height: 100vh;
+	height: 94vh;
 	z-index:1;
 	text-align:center;
 }
@@ -21,13 +21,23 @@
 .owlText{
 	height:100%;
 }
-
 .elf{
 	font-size:4vw;
 	color:white;
+	font-family:'Merriweather', serif
 }
 
 .subElf{
 	font-size:2vw;
 	color:#cdcfd3;
+	font-family:'Merriweather', serif;
+}
+@media only screen and (max-width:600px){
+	.elf{
+		font-size:7vw;
+	}
+	.subElf{
+		font-size:4vw;
+		margin-top:-14%;
+	}
 }

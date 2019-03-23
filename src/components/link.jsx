@@ -5,7 +5,11 @@ import {Link as RouteLink} from 'react-router-dom'
 
 const styles = {
 	flat:{
-		color:'white'
+		color:'white',
+		fontFamily:"'Merriweather', serif",
+	},
+	but:{
+		fontFamily:"'Merriweather', serif",
 	}
 }
 
@@ -15,9 +19,9 @@ const Link = props => {
 		<React.Fragment>
 		{
 			props.active?
-				<Button variant='contained' color='secondary'>{props.children}</Button>
+				<Button className={classes.but} variant='contained' color='secondary'>{props.children}</Button>
 			:
-				<RouteLink to={`/${props.link}`}>
+				<RouteLink style={{textDecoration:'none'}}to={`/${props.link}`}>
 					<Button variant='text' className={classes.flat} color='primary'>{props.children}</Button>
 				</RouteLink>
 		}
