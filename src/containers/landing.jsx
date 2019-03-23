@@ -1,14 +1,7 @@
-import React,{ useState } from 'react'
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
+import React from 'react'
 import Grid from '@material-ui/core/Grid'
-import Link from './../components/link'
 import {withStyles} from '@material-ui/core/styles'
 import Owl from './../OWL.jpg'
-import Cat from './../CAT.png'
 import './Landing.css'
 import NavBar from './../components/nav'
 import { useTheme } from '@material-ui/styles';
@@ -42,7 +35,6 @@ const styles = {
 	}
 };
 const LandingPage = props => {
-	const {classes} = props
 	const theme = useTheme()
 	const width = 
 	[...theme.breakpoints.keys].reverse().reduce((output,key) => {

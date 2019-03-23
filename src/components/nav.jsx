@@ -37,7 +37,7 @@ const NavBar = props => {
 										<Link active={window.location.pathname==='/'} link=''>Home</Link>
 									</Grid>
 									<Grid item>
-										<Link active={window.location.pathname==='/about'} link='about'>ABOUT D.A BISHOP</Link>
+										<Link active={window.location.pathname==='/about'} link='about'>ABOUT D.A. BISHOP</Link>
 									</Grid>
 									<Grid item>
 										<Link active={window.location.pathname==='/contact'} link='contact'>CONTACT</Link>
@@ -64,7 +64,7 @@ const NavBar = props => {
 										<Link active={window.location.pathname==='/'} link=''>Home</Link>
 									</Grid>
 									<Grid item>
-										<Link active={window.location.pathname==='/about'} link='about'>ABOUT D.A BISHOP</Link>
+										<Link active={window.location.pathname==='/about'} link='about'>ABOUT D.A. BISHOP</Link>
 									</Grid>
 									<Grid item>
 										<Link active={window.location.pathname==='/contact'} link='contact'>CONTACT</Link>

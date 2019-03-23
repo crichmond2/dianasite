@@ -2,12 +2,6 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import {withStyles} from '@material-ui/core/styles'
 import AboutPic from './../DianaAbout.png'
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import Link from './../components/link'
 import { useTheme } from '@material-ui/styles';
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 import NavBar from './../components/nav'
@@ -18,6 +12,9 @@ const styles = {
 	},
 	about:{
 		marginLeft:'20px',
+		fontFamily:"'Merriweather', serif",
+	},
+	bigAbout:{
 		fontFamily:"'Merriweather', serif",
 	},
 	text:{
@@ -56,7 +53,7 @@ const About = props => {
 			<NavBar/>
 			<Grid container justify={small?'center':'flex-start'}>
 				<Grid item>
-					<h1 className={classes.about}>ABOUT D.A BISHOP</h1>
+					<h1 className={small?classes.bigAbout:classes.about}>ABOUT D.A. BISHOP</h1>
 				</Grid>
 			</Grid>
 			<Grid className={classes.info}  container direction='column' justify='flex-start'>

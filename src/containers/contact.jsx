@@ -22,7 +22,6 @@ const styles = {
 		fontFamily:"'Merriweather', serif",
 	},
 	bigHeader:{
-		marginLeft:'5%',
 		fontSize:'7vw',
 		fontFamily:"'Merriweather', serif",
 	},
