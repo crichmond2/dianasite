@@ -30,10 +30,10 @@ const styles = {
 		fontFamily:"'Merriweather', serif",
 	},
 	picContainer:{
-		overflow:'auto'
+		overflow:'visible'
 	},
 	pic:{
-		width:'40vw',
+		width:'80%',
 	}
 }
 
@@ -71,11 +71,7 @@ const About = props => {
 						<div/>
 					:
 						<Grid item xs={12} md={5} style={{height:'100%'}}>
-							<Grid container direction='column' justify='center' style={{height:'100%'}} >
-								<Grid item className={classes.picContainer}>
 									<img className={classes.pic} src={AboutPic} alt='AboutPic'/>
-								</Grid>
-							</Grid>
 						</Grid>
 				}
 			</Grid>

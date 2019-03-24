@@ -61,7 +61,7 @@ const Contact = props => {
 			<NavBar/>
 					<h3 className={small?classes.bigHeader:classes.header}>CONTACT</h3>
 					<h3 className={small?classes.bigText:classes.text}>I'd love to hear from you! I am also actively seeking representation /publication for Elf Owls.</h3>
-					<h3 className={small?classes.bigEmail:classes.email} >dianabishop@gmail.com</h3>
+					<h3 className={small?classes.bigEmail:classes.email} ><a href='mailto:dianabishop@gmail.com?Subject=Elf%20Owls' style={{cursor:'pointer'}}>dianabishop@gmail.com</a></h3>
 			<Grid container direction='row' justify='flex-end'>
 				<Grid item xs={2}>
 					<img className={classes.frog} src={Frog} alt='Frog'/>
