@@ -53,7 +53,8 @@ const LandingPage = props => {
 						<h1 className='elf'>ELF OWLS</h1>
 					</Grid>
 					<Grid item>
-						<h1 className='subElf'>When home is dangerous, the forest may be safer.</h1>
+						<h1 className='subElf'>When home is dangerous,</h1>
+						<h1 className=''style={{fontSize:'4vw',color:'#cdcfd3', fontFamily:"'Merriweather', serif "}}>the forest may be safer.</h1>
 					</Grid>
 				</Grid>
 				:
