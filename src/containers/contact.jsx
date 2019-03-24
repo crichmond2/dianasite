@@ -11,7 +11,7 @@ const styles = {
 		height:'100vh'
 	},
 	contact:{
-		height:'50%',
+		height:'50vh',
 	},
 	frog:{
 		width:'100%'
@@ -59,19 +59,11 @@ const Contact = props => {
 	return (
 		<div className={classes.root}>
 			<NavBar/>
-			<Grid container className={classes.contact}direction='column' justify='space-between' alignItems='stretch'>
-				<Grid item>
 					<h3 className={small?classes.bigHeader:classes.header}>CONTACT</h3>
-				</Grid>
-				<Grid item>
 					<h3 className={small?classes.bigText:classes.text}>I'd love to hear from you! I am also actively seeking representation /publication for Elf Owls.</h3>
-				</Grid>
-				<Grid item>
 					<h3 className={small?classes.bigEmail:classes.email} >dianabishop@gmail.com</h3>
-				</Grid>
-			</Grid>
 			<Grid container direction='row' justify='flex-end'>
-				<Grid item xs={3}>
+				<Grid item xs={2}>
 					<img className={classes.frog} src={Frog} alt='Frog'/>
 				</Grid>
 				<Grid item xs={1}>

@@ -58,8 +58,8 @@ const About = props => {
 			</Grid>
 			<Grid className={classes.info}  container direction='column' justify='flex-start'>
 				<Grid item xs={12} md={6}  style={{height:'100%'}}>
-					<Grid container  style={{height:'100%'}}direction='column' justify='center'>
-						<Grid item>
+					<Grid container  style={{height:'100%',overflow:'visible'}}direction='column' justify='center'>
+						<Grid item style={{height:'80vh'}}>
 							<p className={small?classes.bigText:classes.text}>Hi, I'm D.A. Bishop. I'm an author by night and editor and technical writer by day. I've published short literary fiction and nonfiction and Elf Owls is my first novel.</p>
 							<p className={small?classes.bigText:classes.text}>Elf Owls grew out of a night-time story I made up for my daughter when she was eight years old. As she grew up, I stopped telling her the story but it stayed with me. Elf Owls soon became a novel, growing darker than the original light-hearted tale, as things sometimes do when we gain knowledge and grow wiser.</p>
 							<p className={small?classes.bigText:classes.text}>My hope is that Elf Owls captures the magic all around us, and honors the way we meet life's challenges while making our way forward in the world.</p>
